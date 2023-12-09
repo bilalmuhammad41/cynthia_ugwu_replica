@@ -1,0 +1,69 @@
+nav{
+  font-family: 'Gilroy', 'Inter';
+}
+
+.underline-effect{
+  position: relative;
+  cursor: pointer;
+  
+}
+
+.menu-button{
+ 
+}
+
+.menu-button-visible{
+  transform: translateY(0);
+  transition: transform 600ms cubic-bezier(.25,1.08,.68,.98);
+}
+.menu-button-not-visible{
+  transform: translateY(50px);
+  transition: transform 1000ms cubic-bezier(.25,1.08,.68,.98);
+}
+
+
+.underline-effect::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  background-color: white;
+  left:-2px;
+  bottom: 0;
+  transform-origin: right;
+  transition: transform 300ms cubic-bezier(.25,1.08,.68,.98);
+}
+
+.underline-effect:hover::after{
+  transform: scaleX(1);
+  transform-origin: left;
+
+}
+.menu-btn-container{
+  transform: translateY(-30px);
+}
+
+.menu-not-visible{
+  transform: translateY(-30px);
+  transition: transform 600ms cubic-bezier(.25,1.08,.68,.98);
+  
+
+}
+
+.menu-visible{
+  transform: translateY(0);
+  transition: transform 600ms cubic-bezier(.25,1.08,.68,.98);
+
+}
+
+.nav-deactive{
+  transform: translateY(none)
+}
+
+.hamburger-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-30px);
+}

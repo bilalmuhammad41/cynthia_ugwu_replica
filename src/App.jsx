@@ -1,11 +1,25 @@
 import { useState } from 'react'
-import './App.css'
+import {Nav} from "./components"
+import {Home, Projects} from './sections'
 
 function App() {
   return (
-    <>
-      <h1 className='font-bold'>Hello</h1>
-    </>
+    
+      <div className='flex flex-col items-start w-full bg-black overflow-hidden'>
+        
+        
+        <div className='w-full flex justify-center'>
+          <Nav />
+        </div>
+
+        <div className='flex justify-center w-full'>
+          <Home/>
+        </div>  
+        <div className='flex w-full justify-center'>
+          <Projects />  
+        </div> 
+      </div>
+      
   )
 }
 
