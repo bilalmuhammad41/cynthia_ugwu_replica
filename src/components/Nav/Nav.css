@@ -41,7 +41,8 @@ nav{
 
 }
 .menu-btn-container{
-  transform: translateY(-30px);
+  transform: translateY(0px);
+  
 }
 
 .menu-not-visible{

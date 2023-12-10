@@ -60,28 +60,32 @@ const Nav = () => {
           <h3 className='text-lg'>Muhammad Bilal</h3>
         </div>
         {/* Right side Nav */}
-        <div className='flex flex-col justify-between items-end h-[30px]'>
+        <div className='flex flex-col justify-between items-end h-[30px] relative'>
         
           {/* NavLinks */}
-          <ul className ='flex flex-col text-white font-semibold uppercase list-none items-end pt-1 overflow-hidden'>
-            <div className='sm:flex hidden gap-4 justify-center items-center'>
+          <ul className ='sm:flex hidden flex-col text-white font-semibold uppercase list-none items-end mt-1 overflow-hidden'>
+            <div className='flex gap-4 justify-center items-center'>
               {
                 NavItems.map((item, index)=>(
                   <li className={` nav-link select-none text-white text-[17px] menu-not-visible`}  key={index}>{item}</li>
                 ))
               }
             </div>
-             {/* Menu Button */}
-        
-              <div className='menu-btn-container'
-              onClick={(e)=>handleMenuClick(e)}>
-        
-                <button className={` text-white select-none font-semibold text-[17px] menu-button flex justify-center items-center ${menuBtnVisible ? 'menu-button-visible ' : 'menu-button-not-visible'} underline-effect`}>
-                  <span >MENU</span>
-                  <span className='text-gray-400'>+</span>
-                </button>
-            </div>
+           
           </ul>
+
+
+              
+            {/* Menu Button */}
+              
+          <div className='menu-btn-container overflow-hidden absolute'
+            onClick={(e)=>handleMenuClick(e)}>
+      
+              <button className={` text-white select-none font-semibold text-[17px] menu-button flex justify-center items-center ${menuBtnVisible ? 'menu-button-visible ' : 'menu-button-not-visible'} underline-effect`}>
+                <span >MENU</span>
+                <span className='text-gray-400'>+</span>
+              </button>
+          </div>
         </div>
       </div>
 
