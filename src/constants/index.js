@@ -1,11 +1,20 @@
 const NavItems = [
     "the plug",
-    "iexperience",
+    "ixperience",
     "hudu",
     "playground",
     "contact"
 ]
 
+const MobileNavItems = [
+  "home",
+  "the plug",
+  "ixperience",
+  "hudu",
+  "playground",
+  "contact"
+]
 export {
-  NavItems
+  NavItems,
+  MobileNavItems,
 }

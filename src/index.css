@@ -2,4 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body,html{}
+*, body,html{
+  box-sizing: border-box;
+}
