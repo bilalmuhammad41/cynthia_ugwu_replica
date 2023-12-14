@@ -127,7 +127,7 @@ const Nav = () => {
 
   return (
     
-    <nav className= "flex fixed w-full xl:max-w-[1700px]">
+    <nav className= "flex fixed w-full xl:max-w-[1700px] z-10">
       
 
       {/* Desktop Navbar */}
