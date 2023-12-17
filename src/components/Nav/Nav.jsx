@@ -180,6 +180,8 @@ const Nav = () => {
       </div>
 
               {/* Mobile Menu */}
+
+              
       <div className={`max-sm:flex flex-col justify-between absolute hidden w-[100vw] h-[100vh] bg-gray-400 ${ mobileMenuVisible? 'mobile-menu-visible':'mobile-menu-not-visible'} origin-top`}>
           
           {/* Mobile Nav */}

@@ -1,0 +1,10 @@
+.splash-visible{
+  transform: scaleY(1);
+  transition: transform 600ms cubic-bezier(.25,1.08,.68,.98);
+}
+
+.splash-not-visible{
+  transition: transform 600ms cubic-bezier(.25,1.08,.68,.98);
+  transform-origin: top;
+  transform: scaleY(0);
+}
