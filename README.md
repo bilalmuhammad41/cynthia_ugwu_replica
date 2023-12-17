@@ -1,8 +1,23 @@
-# React + Vite
+# Portfolio Website Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repo contains the source code of a replica of [Cynthia Ugwu](https://cynthiaugwu.com/)'s incredible website. My goal for this project is to create as many animations and effect Cynthia as implemented in her website to enhance my front-end development skills with ReactJS, JS, Tailwind CSS and CSS. 
 
-Currently, two official plugins are available:
+Live at: https://bilalmuhammad41.github.io/cynthia_ugwu_replica/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key technologies:
+
+- ReactJS: for building the UI and managing state
+- Tailwind CSS: for rapid prototyping and responsive design
+- Vite: for fast development and bundling
+
+## Project Status:
+Following components are completed along with responsiveness and interactive animations.
+- The desktop and mobile Nav menu.
+- Home Section.
+- Projects Section.
+
+## Planned features:
+- To implement the signature hovering effect in the projects section.
+- To create separate pages for each project containing its description and details.
+
+This portfolio website is a work in progress, and I plan to actively develop it.
