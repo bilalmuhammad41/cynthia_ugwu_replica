@@ -165,7 +165,7 @@ const Nav = () => {
 
                        {/* Mobile Menu Button */}
               
-          <div className={`max-sm:flex hidden menu-btn-container overflow-hidden absolute ${mobileMenuBtnVisible ? 'menu-button-visible underline-effect' : 'menu-button-not-visible'}`}
+          <div className={`max-sm:flex hidden menu-btn-container overflow-hidden absolute ${mobileMenuBtnVisible ? 'menu-button-visible underline-effect' : 'menu-button-not-visible'} `}
             onClick={(e) => handleMobileMenuClick(e)}>
       
             <button className={` text-white select-none font-semibold text-[17px] menu-button flex justify-center items-center `}>
@@ -180,6 +180,8 @@ const Nav = () => {
       </div>
 
               {/* Mobile Menu */}
+
+              
       <div className={`max-sm:flex flex-col justify-between absolute hidden w-[100vw] h-[100vh] bg-gray-400 ${ mobileMenuVisible? 'mobile-menu-visible':'mobile-menu-not-visible'} origin-top`}>
           
           {/* Mobile Nav */}
@@ -210,7 +212,7 @@ const Nav = () => {
           <div className={`h-[70%] w-full overflow-hidden`}>
             <ul className='list-none w-full h-full px-5 mobile-nav-items-container'>
               {MobileNavItems.map((item, index)=>(
-                  <div className={`w-full h-[55px] mobile-nav-items overflow-hidden`} key={index}>
+                  <div className={`w-full h-[55px] mobile-nav-items overflow-hidden cursor-pointer`} key={index}>
                     <li className={`uppercase list-none font-medium mobile-nav-items-text`}>
                       {item}
                     </li>

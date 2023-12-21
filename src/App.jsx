@@ -1,26 +1,25 @@
-import { useState } from 'react'
-import {Nav} from "./components"
+import React, { useState, useEffect } from 'react'
+import {Nav, SplashScreen} from "./components"
 import {Home, Projects} from './sections'
 
-function App() {
-  return (
-    
-      <div className='flex flex-col items-start w-full bg-black overflow-hidden'>
-        
-        
-        <div className='w-full flex justify-center'>
-          <Nav />
-        </div>
 
-        <div className='flex justify-center w-full'>
-          <Home/>
-        </div>  
-        <div className='flex w-full justify-center'>
-          <Projects />  
-        </div> 
-      </div>
-      
-  )
+function App() {
+  const [isLoading, setIsLoading] = useState(true)
+ 
+  return (
+    <>
+      {isLoading ? <SplashScreen isLoading={isLoading} setIsLoading ={setIsLoading} /> : 
+    
+        <div className="flex flex-col items-start w-full bg-black overflow-hidden">
+          <Nav />
+          <main className="flex flex-col justify-center w-full">
+            <Home />
+            <Projects />
+          </main>
+        </div>
+      }
+    </>
+  );
 }
 
 export default App
