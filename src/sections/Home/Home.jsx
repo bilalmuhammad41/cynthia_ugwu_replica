@@ -16,21 +16,21 @@ const Home = () => {
 
 
   return (
-    <section className='home flex flex-col justify-between py-20 mt-[80px] xl:max-w-[1700px] w-full h-[100vh] bg-black'>
+    <section className='home flex flex-col justify-between py-20 mt-[80px] xl:max-w-[1700px] w-full h-[100svh] bg-black'>
       
       {/* Top */}
 
       <div className='text-white '>
         
         {/* Main Heading */}
-        <div className='flex flex-col md:pl-12 sm:pl-10 ss:pl-6 xs:pl-5 '>
+        <div className='flex flex-col md:pl-12 sm:pl-10 ss:pl-6 pl-5 '>
           
           {/* Main Container */}
           <div className='flex flex-col w-min items-end'>
             <div className='flex-col text-[#a0a1a3] lg:text-[200px] md:text-[150px] sm:text-[100px] ss:text-[90px] text-[50px] text-container'>
               <span className='hero-text flex items-center font-semibold lg:h-[170px]  md:h-[130px] sm:h-[90px] ss:h-[80px] h-[40px] overflow-hidden '><h1 className='not-visible to-transition'>WEB</h1></span>
             
-              <span className='hero-text flex items-center font-semibold lg:h-[170px] md:ml-[170px] md:h-[130px] sm:ml-[120px] sm:h-[90px] ss:ml-[100px] ss:h-[80px] h-[55px] xs:ml-[50px] overflow-hidden'><h1 className='not-visible to-transition'>DEVELOPER</h1></span>
+              <span className='hero-text flex items-center font-semibold lg:h-[170px] md:ml-[170px] md:h-[130px] sm:ml-[120px] sm:h-[90px] ss:ml-[100px] ss:h-[80px] h-[55px] ml-[50px] overflow-hidden'><h1 className='not-visible to-transition'>DEVELOPER</h1></span>
             </div>
             
             <div className='flex overflow-hidden'>
@@ -46,9 +46,9 @@ const Home = () => {
       </div>
 
       {/* Bottom */}
-      <div className='text-white md:text-sm sm:text-[0.7rem] ss:text-[0.7rem] text-[0.6rem] font-semibold justify-between flex w-full bottom-0 px-5 pb-1 overflow-hidden'>
-        <h2 className='flex items-center left-0 not-visible to-transition delay-[600ms]'>CURRENTLY A FREELANCER</h2>
-        <h2 className='flex items-center ml-[-10%] cursor-pointer not-visible to-transition delay-[600ms] underline-effect arrow-rotate'>DIGITAL ARTIST AT FIVERR <img className=' arrow ml-2 md:h-[20px] md:w-[20px] h-[17px] w-[17px]' src={arrow_right_up} alt=""  /></h2>
+      <div className='text-white md:text-sm sm:text-[0.7rem] ss:text-[0.7rem]  text-[0.7rem] font-semibold justify-between flex w-full bottom-0 px-5 pb-1 overflow-hidden'>
+        <h2 className='flex items-center max-xs:w-[5rem] mb-2 left-0 not-visible to-transition delay-[600ms]'>CURRENTLY <br className='hidden max-ss:block' />A FREELANCER</h2>
+        <h2 className='flex items-center max-xs:items-end ml-[-10%] cursor-pointer mb-2 not-visible to-transition delay-[600ms] underline-effect arrow-rotate'>DIGITAL <br className='hidden max-ss:block' /> ARTIST AT FIVERR <img className=' arrow ml-2 md:h-[20px] md:w-[20px] h-[17px] w-[17px]' src={arrow_right_up} alt=""  /></h2>
          <button className='w-[25px] h-[25px] max-sm:hidden flex justify-center items-center rounded-full bg-gray-400 right-0 not-visible to-transition delay-[600ms] arrow-translate'><img className='arrow-down max-xs:h-[10px] max-xs:w-[10px]' src={arrow_down} alt="" /></button>
       </div>
      

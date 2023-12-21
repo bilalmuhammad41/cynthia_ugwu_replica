@@ -118,23 +118,16 @@ const Nav = () => {
 
 
 
-
-
-
-
-
-
-
   return (
     
     <nav className= "flex fixed w-full xl:max-w-[1700px] z-10">
       
 
       {/* Desktop Navbar */}
-      <div className='flex items-center justify-between w-full h-[80px] py-5 px-7 bg-black'>
+      <div className='flex items-center justify-between w-full h-[80px] max-ss:h-[55px] py-5 max-ss:px-4 px-7 bg-black'>
                        {/* Logo */}
         <div className='text-white font-semibold'>
-          <h3 className='text-lg'>Muhammad Bilal</h3>
+          <h3 className='text-lg max-ss:text-[1rem]'>Muhammad Bilal</h3>
         </div>
                        {/* Right side Nav */}
         <div className='flex flex-col justify-between items-end h-[30px] relative'>
@@ -168,7 +161,7 @@ const Nav = () => {
           <div className={`max-sm:flex hidden menu-btn-container overflow-hidden absolute ${mobileMenuBtnVisible ? 'menu-button-visible underline-effect' : 'menu-button-not-visible'} `}
             onClick={(e) => handleMobileMenuClick(e)}>
       
-            <button className={` text-white select-none font-semibold text-[17px] menu-button flex justify-center items-center `}>
+            <button className={` text-white select-none font-semibold text-[17px] max-ss:text-[1rem] mt-1 menu-button flex justify-center items-center `}>
               <span >MENU</span>
               <span className='text-gray-400'>+</span>
             </button>
