@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import {Nav, SplashScreen} from "./components"
 import {Home, Projects} from './sections'
+import './index.css'
 
 
 function App() {
@@ -10,9 +11,9 @@ function App() {
     <>
       {isLoading ? <SplashScreen isLoading={isLoading} setIsLoading ={setIsLoading} /> : 
     
-        <div className="flex flex-col items-start w-full bg-black overflow-hidden">
+        <div className="flex flex-col items-center w-full bg-black overflow-hidden no-scrollbar">
           <Nav />
-          <main className="flex flex-col justify-center w-full">
+          <main className="flex flex-col items-center justify-center w-full">
             <Home />
             <Projects />
           </main>

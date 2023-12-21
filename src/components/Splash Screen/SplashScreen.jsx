@@ -13,8 +13,11 @@ const SplashScreen = ({ setIsLoading}) => {
         setPercentage((prevPercentage) => Math.min(prevPercentage += count, 100))   
       }    
       else{
+
         setActive(false)
-        setIsLoading(false)
+        setTimeout(()=>{
+          setIsLoading(false)
+        }, 800)
       }
     }
     
@@ -25,11 +28,13 @@ const SplashScreen = ({ setIsLoading}) => {
   
    
   return (
-    <div className={`${active ? 'splash-visible': 'splash-not-visible' } flex h-[100vh] w-[100vw] items-center bg-gray-400`}>
-      <div className={`m-auto flex w-[320px] items-center loader`}>
-        <h2 className={`text-[1.125rem] font-semibold`}>Muhammad Bilal</h2>
-        <span className='w-[80px] h-[2px] mx-5 bg-black rounded-full '></span>
-        <h2 className=' text-[1.125rem] font-semibold'>{percentage}%</h2>
+    <div className='[100vh] w-[100vw] bg-black'>
+      <div className={`${active ? 'splash-visible': 'splash-not-visible' } flex h-[100vh] w-[100vw] items-center bg-gray-400`}>
+        <div className={`m-auto flex w-[320px] items-center loader`}>
+          <h2 className={`text-[1.125rem] font-semibold`}>Muhammad Bilal</h2>
+          <span className='w-[80px] h-[2px] mx-5 bg-black rounded-full '></span>
+          <h2 className=' text-[1.125rem] font-semibold'>{percentage}%</h2>
+        </div>
       </div>
     </div>
   )
