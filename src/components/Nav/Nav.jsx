@@ -137,7 +137,7 @@ const Nav = () => {
             <div className='flex gap-4 justify-center items-center'>
               {
                 NavItems.map((item, index)=>(
-                  <li className={` nav-link select-none text-white text-[17px] menu-not-visible`}  key={index}>{item}</li>
+                  <li className={` nav-link select-none text-white text-[17px] menu-not-visible`}  key={index}>{item.title}</li>
                 ))
               }
             </div>
@@ -175,7 +175,7 @@ const Nav = () => {
               {/* Mobile Menu */}
 
               
-      <div className={`max-sm:flex flex-col justify-between absolute hidden w-[100vw] h-[100vh] bg-gray-400 ${ mobileMenuVisible? 'mobile-menu-visible':'mobile-menu-not-visible'} origin-top`}>
+      <div className={`max-sm:flex flex-col justify-between absolute hidden w-[100svw] h-[100svh] bg-gray-400 ${ mobileMenuVisible? 'mobile-menu-visible':'mobile-menu-not-visible'} origin-top`}>
           
           {/* Mobile Nav */}
         <div className='flex w-full h-[80px] border-b-[1px] border-gray-300 items-center justify-between py-5 px-7' > 
@@ -207,7 +207,7 @@ const Nav = () => {
               {MobileNavItems.map((item, index)=>(
                   <div className={`w-full h-[55px] mobile-nav-items overflow-hidden cursor-pointer`} key={index}>
                     <li className={`uppercase list-none font-medium mobile-nav-items-text`}>
-                      {item}
+                      {item.title}
                     </li>
                   </div>
               ))}

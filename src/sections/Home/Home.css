@@ -3,7 +3,7 @@
 }
 .not-visible{
   transition: transform 700ms cubic-bezier(.25,1.08,.68,.98);
-  transform: translateY(100%);
+  transform: translateY(200%);
 }
 
 .visible{
