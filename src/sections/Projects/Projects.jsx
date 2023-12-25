@@ -19,7 +19,7 @@ const Projects = () => {
          <div className={`flex md:h-[250px] sm:h-[150px] ss:h-[120px] h-[90px] text-container border-white ${index === 0 ? 'border-t-[1px]':''} border-b-[1px] leading-none items-center cursor-pointer`}>
            
            {/* Project Title and Year */}
-           <h1 className='flex-1 text-[#a0a1a3] uppercase font-semibold md:text-[120px] sm:text-[80px] ss:text-[70px] text-[50px] text-container project'>{item.title}</h1>
+           <h1 className='flex-1 text-[#a0a1a3] uppercase font-semibold md:text-[110px] sm:text-[80px] ss:text-[70px] text-[35px] text-container project'>{item.title}</h1>
            <h3 className='text-white pr-2 font-semibold md:text-sm text-[0.7rem]'>{index === 0 ? '2022' : ''}{index === 1 ? '2022' : ''}{index === 2 ? '2021' : ''}</h3>
          </div>
        </a>

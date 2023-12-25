@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import {Nav, SplashScreen} from "./components"
-import {Home, Projects} from './sections'
+import {Home, Projects, About} from './sections'
 import './index.css'
 
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(false)
  
   return (
     <>
@@ -16,6 +16,7 @@ function App() {
           <main className="flex flex-col items-center justify-center w-full">
             <Home />
             <Projects />
+            <About/>
           </main>
         </div>
       }
