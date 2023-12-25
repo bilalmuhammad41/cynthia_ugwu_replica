@@ -5,7 +5,7 @@ const Footer = ({formattedTime}) => {
 
 
   return (
-    <footer data-scroll-section className='' id='footer'>
+    <footer className='' id='footer'>
       <div className='flex flex-col-reverse gap-5 ss:flex-row  justify-between w-[100svw] px-5 pb-4 md:pt-[15svh] sm:pt-[10svh] ss:pt-[10svh] xs:pt-[7svh] text-[0.9rem]'>
         <div className='text-white font-semibold'>2023 &nbsp;&nbsp;&nbsp; {formattedTime} PST</div>
         

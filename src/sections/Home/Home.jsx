@@ -19,7 +19,7 @@ const Home = () => {
 
 
   return (
-    <section data-scroll-section className='home flex flex-col justify-between py-20 mt-[80px] xl:max-w-[1700px] w-full h-[100svh] bg-black'>
+    <section className='home flex flex-col justify-between py-20 mt-[80px] xl:max-w-[1700px] w-full h-[100svh] bg-black'>
       
       {/* Top */}
 

@@ -7,7 +7,7 @@ const About = () => {
   
   const imgSize = '200px';
   return (
-    <section data-scroll-section className='flex py-20 px-[10svw] w-[100svw] justify-end items-center flex-col md:flex-row' id='about'>
+    <section className='flex py-20 px-[10svw] w-[100svw] justify-end items-center flex-col md:flex-row' id='about'>
 
       {/* Profile Pic */}
 
