@@ -26,13 +26,20 @@ const SplashScreen = ({ setIsLoading}) => {
     }, 30)
   }, [percentage]);
   
+  const barWidth = {
+    width: `${percentage}%`
+  }
    
   return (
     <div className='[100vh] w-[100vw] bg-black'>
       <div className={`${active ? 'splash-visible': 'splash-not-visible' } flex h-[100vh] w-[100vw] items-center bg-gray-400`}>
         <div className={`m-auto flex w-[320px] items-center loader`}>
           <h2 className={`text-[1.125rem] font-semibold`}>Muhammad Bilal</h2>
-          <span className='w-[80px] h-[2px] mx-5 bg-black rounded-full '></span>
+          {/* Loading bar */}
+          <span className={`relative w-[80px] h-[2px] mx-5 bg-white rounded-full`}>
+          <span className={`z-3 absolute h-[2px] bg-black  rounded-full`} style={barWidth}></span>
+          </span>
+          
           <h2 className=' text-[1.125rem] font-semibold'>{percentage}%</h2>
         </div>
       </div>

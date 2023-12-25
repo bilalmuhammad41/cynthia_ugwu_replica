@@ -3,7 +3,7 @@ import "./Nav.css"
 import { MobileNavItems, NavItems } from '../../constants'
 import {lines, close} from '../../assets'
 
-const Nav = () => {
+const Nav = ({formattedTime}) => {
   const [scrolling, setScrolling] = useState(false)
   const [logoVisible, setLogoVisible] = useState(true)
   const [menuBtnVisible, setMenuBtnVisible] = useState(true)
@@ -72,22 +72,11 @@ const Nav = () => {
     }, 400)
    
   }
+
+
   //Time
   
-  const [currentTime, setCurrentTime] = useState(new Date());
-
-  useEffect(() => {
-    const updateTimer = () => {
-      setCurrentTime(new Date());
-    };
-    const timerId = setInterval(updateTimer, 1000);
-    return () => clearInterval(timerId);
-  }, []);
-
-  const hours = currentTime.getHours();
-  const minutes = currentTime.getMinutes();
-  const ampm = hours >= 12 ? 'PM' : 'AM';
-  const formattedTime = `${hours % 12}:${minutes.toString().padStart(2, '0')} ${ampm}`;
+  
 
 
   const handleMobileMenuClick = () => {

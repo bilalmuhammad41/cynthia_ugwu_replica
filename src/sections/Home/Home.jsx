@@ -19,7 +19,7 @@ const Home = () => {
 
 
   return (
-    <section className='home flex flex-col justify-between py-20 mt-[80px] xl:max-w-[1700px] w-full h-[100svh] bg-black'>
+    <section data-scroll-section className='home flex flex-col justify-between py-20 mt-[80px] xl:max-w-[1700px] w-full h-[100svh] bg-black'>
       
       {/* Top */}
 
@@ -55,7 +55,7 @@ const Home = () => {
         
         <h2 className={`flex items-center max-xs:items-end ml-[-10%] cursor-pointer mb-2 ${isVisible? 'visible' : 'not-visible'} delay-[600ms] underline-effect arrow-rotate`}>DIGITAL <br className='hidden max-ss:block' /> ARTIST AT FIVERR <img className=' arrow ml-2 md:h-[20px] md:w-[20px] h-[17px] w-[17px]' src={arrow_right_up} alt="Fiverr profile"  /></h2>
         
-        <button className={`w-[25px] h-[25px] max-sm:hidden flex justify-center items-center rounded-full bg-gray-400 right-0 ${isVisible? 'visible' : 'not-visible'} delay-[600ms] arrow-translate`}><img className='arrow-down h-[17px] w-[17px] max-xs:h-[10px] max-xs:w-[10px]' src={arrow_down} alt="scroll-down" /></button>
+        <button className={`w-[25px] h-[25px] max-sm:hidden flex justify-center items-center rounded-full bg-gray-400 right-0 ${isVisible? 'visible' : 'not-visible'} delay-[600ms] arrow-translate`}><a href='#footer'><img className='arrow-down h-[17px] w-[17px] max-xs:h-[10px] max-xs:w-[10px]' src={arrow_down} alt="scroll-down" /></a></button>
       </div>
      
 

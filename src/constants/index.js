@@ -47,7 +47,31 @@ const MobileNavItems = [
     link : "bilalmohammad41@gmail.com"
   },
 ]
+
+const socials = [
+  {
+    name: 'linkedin',
+    link: 'https://www.linkedin.com/in/mbilal41/'
+  },
+
+  {
+    name: 'instagram',
+    link: 'https://www.instagram.com/muhammadbilal41/'
+  },
+
+  {
+    name:'github',
+    link: 'https://github.com/bilalmuhammad41'
+  },
+  
+  {
+    name: 'facebook',
+    link: 'https://www.facebook.com/its.bilal.here/' 
+  }
+]
+
 export {
   NavItems,
   MobileNavItems,
+  socials,
 }

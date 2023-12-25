@@ -4,7 +4,7 @@ import './projects.css'
 
 const Projects = () => {
   return (
-    <section className='w-full md:py-[15svh] sm:py-[10svh] ss:py-[10svh] xs:py-[7svh] bg-black xl:max-w-[1700px] md:px-12 sm:px-10 ss:px-6 px-5 '>
+    <section data-scroll-section className='w-full md:py-[15svh] sm:py-[10svh] ss:py-[10svh] xs:py-[7svh] bg-black xl:max-w-[1700px] md:px-12 sm:px-10 ss:px-6 px-5 '>
       <div className='flex flex-col'>
         
         {/* Project Div */}
