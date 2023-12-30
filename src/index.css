@@ -4,11 +4,22 @@
 
 *, body,html{
   box-sizing: border-box;
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', sans-serif;
   margin:0;
   padding: 0;
 }
-
+@font-face {
+  font-family: 'Gilroy';
+  src: Local(Gilroy),
+        url('./assets/fonts/Gilroy/Gilroy-Black.ttf') format('truetype'),
+        url('./assets/fonts/Gilroy/Gilroy-ExtraBold.ttf') format('truetype'),
+        url('./assets/fonts/Gilroy/Gilroy-Heavy.ttf') format('truetype'),
+        url('./assets/fonts/Gilroy/Gilroy-Light.ttf') format('truetype'),
+        url('./assets/fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype'),
+        url('./assets/fonts/Gilroy/Gilroy-Medium.ttf') format('truetype'),
+        url('./assets/fonts/Gilroy/Gilroy-Regular.ttf') format('truetype'),
+        url('./assets/fonts/Gilroy/Gilroy-Thin.ttf') format('truetype');
+      }
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
