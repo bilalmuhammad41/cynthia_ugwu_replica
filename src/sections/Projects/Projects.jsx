@@ -20,7 +20,7 @@ const Projects = () => {
            
            {/* Project Title and Year */}
            <h1 className='flex-1 text-[#a0a1a3] uppercase font-semibold md:text-[110px] sm:text-[80px] ss:text-[70px] text-[35px] text-container project'>{item.title}</h1>
-           <h3 className='text-white pr-2 font-semibold md:text-sm text-[0.7rem]'>{index === 0 ? '2022' : ''}{index === 1 ? '2022' : ''}{index === 2 ? '2021' : ''}</h3>
+           <h3 className='text-white pr-2 font-semibold md:text-sm text-[0.7rem]'>{index === 0 ? '2022' : ''}{index === 1 ? '2022' : ''}{index === 2 ? '2022' : ''}</h3>
          </div>
        </a>
         ))}

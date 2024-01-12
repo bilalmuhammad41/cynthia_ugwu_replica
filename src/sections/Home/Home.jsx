@@ -53,7 +53,7 @@ const Home = () => {
         
         <h2 className={`flex items-center max-xs:w-[5rem] mb-2 left-0 ${isVisible? 'visible' : 'not-visible'} delay-[600ms]`} alt='Current Occupation'>CURRENTLY <br className='hidden max-ss:block' />A FREELANCER</h2>
         
-        <h2 className={`flex items-center max-xs:items-end ml-[-10%] cursor-pointer mb-2 ${isVisible? 'visible' : 'not-visible'} delay-[600ms] underline-effect arrow-rotate`}>DIGITAL <br className='hidden max-ss:block' /> ARTIST AT FIVERR <img className=' arrow ml-2 md:h-[20px] md:w-[20px] h-[17px] w-[17px]' src={arrow_right_up} alt="Fiverr profile"  /></h2>
+        <h2 className={`flex items-center max-xs:items-end ml-[-10%] cursor-pointer mb-2 ${isVisible? 'visible' : 'not-visible'} delay-[600ms] underline-effect arrow-rotate`}><a href="https://www.fiverr.com/mbilal41" target='_blank'>DIGITAL <br className='hidden max-ss:block' /> ARTIST AT FIVERR </a><img className=' arrow ml-2 md:h-[20px] md:w-[20px] h-[17px] w-[17px]' src={arrow_right_up} alt="Fiverr profile"  /></h2>
         
         <button className={`w-[25px] h-[25px] max-sm:hidden flex justify-center items-center rounded-full bg-gray-400 right-0 ${isVisible? 'visible' : 'not-visible'} delay-[600ms] arrow-translate`}><a href='#footer'><img className='arrow-down h-[17px] w-[17px] max-xs:h-[10px] max-xs:w-[10px]' src={arrow_down} alt="scroll-down" /></a></button>
       </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef} from 'react'
-import {Nav, SplashScreen} from "./components"
+import {CustomCursor, Nav, SplashScreen} from "./components"
 import {Home, Projects, About, Footer} from './sections'
 import LocomotiveScroll from 'locomotive-scroll'
 
