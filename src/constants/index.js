@@ -9,7 +9,7 @@ const NavItems = [
     },
     {
       title : "nike",
-      link : "https://github.com/bilalmuhammad41/Nike-LandingPage"
+      link : "https://bilalmuhammad41.github.io/Nike-LandingPage/"
     },
     {
       title : "my todo",
@@ -36,7 +36,7 @@ const MobileNavItems = [
   },
   {
     title : "nike",
-    link : "https://github.com/bilalmuhammad41/Nike-LandingPage"
+    link : "https://bilalmuhammad41.github.io/Nike-LandingPage/"
   },
   {
     title : "my todo",

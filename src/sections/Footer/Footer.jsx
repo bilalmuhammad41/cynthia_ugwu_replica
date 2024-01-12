@@ -11,7 +11,7 @@ const Footer = ({formattedTime}) => {
         
         <ul className='flex '>{socials.map((social, index)=>(
           <li className={`list-none sm:${index < socials.length-1 ? 'mr-5' :''} ${index < socials.length-1 ? 'mr-4' :''}  uppercase font-semibold text-white underline-effect`} key={index}>
-            <a href={social.link}>{social.name}</a>
+            <a href={social.link} target='_blank'>{social.name}</a>
           </li>
         ))}
         </ul>

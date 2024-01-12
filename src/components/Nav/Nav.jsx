@@ -126,7 +126,7 @@ const Nav = ({formattedTime}) => {
             <div className='flex gap-4 justify-center items-center'>
               {
                 NavItems.map((item, index)=>(
-                  <li className={` nav-link select-none text-white text-[17px] menu-not-visible`}  key={index}>{item.title}</li>
+                  <li className={` nav-link select-none text-white text-[17px] menu-not-visible`}  key={index}><a href={item.link} target='_blank'>{item.title}</a></li>
                 ))
               }
             </div>
@@ -196,7 +196,7 @@ const Nav = ({formattedTime}) => {
               {MobileNavItems.map((item, index)=>(
                   <div className={`w-full h-[55px] mobile-nav-items overflow-hidden cursor-pointer`} key={index}>
                     <li className={`uppercase list-none font-medium mobile-nav-items-text`}>
-                      {item.title}
+                      <a href={item.link} target='_blank'>{item.title}</a>
                     </li>
                   </div>
               ))}
