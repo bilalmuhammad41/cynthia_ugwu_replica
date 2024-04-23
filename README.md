@@ -1,6 +1,6 @@
 # Portfolio Website Project
 
-This repo contains the source code of a replica of [Cynthia Ugwu](https://cynthiaugwu.com/)'s incredible website. My goal for this project is to create as many animations and effect Cynthia as implemented in her website to enhance my front-end development skills with ReactJS, JS and Tailwind CSS + CSS5. 
+This repo contains the source code of a replica of [Cynthia Ugwu](https://cynthiaugwu.com/)'s incredible website. My goal for this project is to create as many animations and effect Cynthia as implemented in her website to enhance my front-end development skills with ReactJS, JS and Tailwind CSS + custom CSS. 
 
 Live at: https://bilalmuhammad41.github.io/cynthia_ugwu_replica/
 
